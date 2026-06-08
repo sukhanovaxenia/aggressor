@@ -14,5 +14,5 @@ venv/
 mutated_sequences/
 mutated_sequences.fasta
 *.log
-./.github/.DS_Store
-./.github/workflows/ci.yml
+.github/.DS_Store
+.github/workflows/ci.yml
