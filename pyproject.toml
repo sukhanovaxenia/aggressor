@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-    { name = "Xenia", email = "you@example.org" },
+    { name = "Xenia Sukhanova, Egor Pivovarov, Vladimir Svistak", email = "sukhanovaxenia@gmail.com" },
 ]
 keywords = [
     "bioinformatics", "protein-aggregation", "amyloid", "mutagenesis",
@@ -30,10 +30,10 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/your-org/aggressor"
-Repository = "https://github.com/your-org/aggressor"
-Documentation = "https://your-org.github.io/aggressor"
-Issues = "https://github.com/your-org/aggressor/issues"
+Homepage = "https://github.com/sukhanovaxenia/aggressor"
+Repository = "https://github.com/sukhanovaxenia/aggressor"
+Documentation = "https://sukhanovaxenia.github.io/aggressor"
+Issues = "https://github.com/sukhanovaxenia/aggressor/issues"
 
 [project.optional-dependencies]
 test = ["pytest>=7", "pytest-cov>=4"]

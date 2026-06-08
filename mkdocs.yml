@@ -1,6 +1,6 @@
 site_name: AGGRESSOR
 site_description: Aggregation-Guided Generation of REgion-Specific Substitution ORiented mutations
-repo_url: https://github.com/your-org/aggressor
+repo_url: https://github.com/sukhanovaxenia/aggressor
 theme:
   name: material
   features:
