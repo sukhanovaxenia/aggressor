@@ -7,9 +7,8 @@ package:
 
 source:
   # For a real bioconda submission, point url/sha256 at the PyPI sdist:
-  # url: https://pypi.io/packages/source/a/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  # sha256: <fill-in>
-  path: ..
+  url: url: https://pypi.io/packages/source/a/aggressor-mutagenesis/aggressor_mutagenesis-0.2.0.tar.gz
+  sha256: 7d84077422e05e9c38687ea8c6012b63f14326d04ce36f85d8fd7d64450ab9cb
 
 build:
   noarch: python
