@@ -4,7 +4,6 @@ from typing import List, Dict, Optional
 from aggressor.core.config import logger, DEFAULT_MUTATIONS
 from aggressor.core.models import ClusterEvaluator, Cluster
 from aggressor.rules.evaluators import (
-    BaseClusterEvaluator,
     HydrophobicAliphaticEvaluator,
     AromaticEvaluator,
     AmideEvaluator,

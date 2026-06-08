@@ -12,10 +12,10 @@ References:
 - Rousseau et al., J Mol Biol 2006 (gatekeeper hypothesis)
 - Tartaglia et al., J Mol Biol 2008 (aggregation propensity scale)
 """
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum, auto
 from typing import (
-    List, Tuple, Dict, Set, Any, Optional,
+    List, Tuple, Dict, Any, Optional,
     FrozenSet, Protocol, runtime_checkable, Union
 )
 

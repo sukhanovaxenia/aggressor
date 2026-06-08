@@ -27,10 +27,9 @@ References:
 - King et al., Science 2012 (amide zipper formation)
 - Tartaglia et al., J Mol Biol 2008 (aggregation propensity)
 """
-from typing import List, Dict, Optional
+from typing import List
 
-from aggressor.core.config import logger, DEFAULT_MUTATIONS
-from aggressor.core.models import Cluster, HydrophobicAromaticCluster, ClusterEvaluator
+from aggressor.core.models import Cluster, HydrophobicAromaticCluster
 
 
 # =============================================================================

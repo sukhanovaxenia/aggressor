@@ -30,10 +30,8 @@ from aggressor.core.config import (
     logger
 )
 from aggressor.core.models import (
-    Cluster,
     MultiRuleCluster,
     MutationType,
-    MutationInfo,
     MultiMutationResult,
 )
 from aggressor.analysis.regions import (

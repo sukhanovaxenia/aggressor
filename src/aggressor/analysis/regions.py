@@ -35,8 +35,7 @@ from aggressor.core.models import (
     Cluster,
     MultiRuleCluster,
     MutationType,
-    PositionContext,
-    ClusterType
+    PositionContext
 )
 from aggressor.rules import RuleRegistry, DEFAULT_REGISTRY
 from aggressor.analysis.clustering import merge_overlapping_clusters_unionfind

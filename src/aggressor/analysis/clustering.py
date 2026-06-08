@@ -14,7 +14,7 @@ Architecture:
     merge_overlapping_clusters_unionfind: Main merging pipeline
     Cluster factory and deduplication utilities
 """
-from typing import List, Dict, Set, Tuple, Union
+from typing import List, Dict, Set, Union
 
 from aggressor.core.config import MAX_GAP_FOR_MERGING, logger
 from aggressor.core.models import Cluster, MultiRuleCluster
