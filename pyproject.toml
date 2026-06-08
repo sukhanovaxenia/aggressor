@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aggressor-mutagenesis"
+version = "0.2.0"
+description = "Aggregation-Guided Generation of REgion-Specific Substitution ORiented mutations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Xenia", email = "you@example.org" },
+]
+keywords = [
+    "bioinformatics", "protein-aggregation", "amyloid", "mutagenesis",
+    "gatekeeper", "aggregation-prone-region", "in-silico",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+# Pure standard library — keeps the bioconda recipe trivial.
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/your-org/aggressor"
+Repository = "https://github.com/your-org/aggressor"
+Documentation = "https://your-org.github.io/aggressor"
+Issues = "https://github.com/your-org/aggressor/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=7", "pytest-cov>=4"]
+docs = ["mkdocs-material>=9", "mkdocstrings[python]>=0.24"]
+dev = ["aggressor-mutagenesis[test,docs]", "ruff>=0.4", "build>=1.2"]
+
+[project.scripts]
+aggressor = "aggressor.cli.app:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

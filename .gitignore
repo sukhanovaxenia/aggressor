@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+site/
+.venv/
+venv/
+mutated_sequences/
+mutated_sequences.fasta
+*.log

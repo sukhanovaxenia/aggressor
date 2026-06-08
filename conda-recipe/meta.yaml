@@ -1,0 +1,44 @@
+{% set name = "aggressor-mutagenesis" %}
+{% set version = "0.2.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  # For a real bioconda submission, point url/sha256 at the PyPI sdist:
+  # url: https://pypi.io/packages/source/a/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  # sha256: <fill-in>
+  path: ..
+
+build:
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  entry_points:
+    - aggressor = aggressor.cli.app:main
+
+requirements:
+  host:
+    - python >=3.10
+    - pip
+    - setuptools >=68
+  run:
+    - python >=3.10
+
+test:
+  imports:
+    - aggressor
+  commands:
+    - aggressor --version
+
+about:
+  home: https://github.com/your-org/aggressor
+  license: MIT
+  license_file: LICENSE
+  summary: Aggregation-Guided Generation of REgion-Specific Substitution ORiented mutations
+  dev_url: https://github.com/your-org/aggressor
+
+extra:
+  recipe-maintainers:
+    - your-github-handle
