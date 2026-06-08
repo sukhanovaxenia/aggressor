@@ -14,3 +14,4 @@ venv/
 mutated_sequences/
 mutated_sequences.fasta
 *.log
+.github/workflows/ci.yml
